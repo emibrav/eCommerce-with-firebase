@@ -8,7 +8,7 @@ export default function ProfilePhoto() {
   return (
     <>
       <section className="avatars me-2 md-me-3">
-        <img referrerPolicy="no-referrer" src={user.photoURL} alt="profile" />
+        <img referrerPolicy="no-referrer" src={user.photoURL || null} alt="profile" />
       </section>
     </>
   )

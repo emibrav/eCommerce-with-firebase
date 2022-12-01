@@ -1,3 +1,9 @@
+import Navbar from "../components/Navbar";
+
 export default function OnSale() {
-  return (<h2>Productos en promoción! 🔥</h2>)
-}
+  return (
+    <>
+      <Navbar />
+      Productos en promoción! 🔥
+    </>
+  )}

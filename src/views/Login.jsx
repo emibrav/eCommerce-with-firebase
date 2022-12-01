@@ -50,7 +50,7 @@ export default function Login() {
         setError("Ya te has logueado previamente con Google, debes hacerlo nuevamente con ese método de autenticación")
 
       }
-      console.log(error.message)
+      console.log(error)
     }
   }
 

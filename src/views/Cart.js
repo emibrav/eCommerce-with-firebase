@@ -1,8 +1,11 @@
+import Navbar from "../components/Navbar"
+
 const Cart = () => {
   return (
-    <h2>
+    <>
+      <Navbar />
       Carrito de compras 🛒
-    </h2>
+    </>
   )
 }
 

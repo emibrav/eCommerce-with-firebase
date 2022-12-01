@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/authContext";
-import ProfilePhoto from "../views/ProfilePhoto"
+// import ProfilePhoto from "../views/ProfilePhoto"
 
 export default function Navbar() {
 
@@ -11,7 +11,7 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     await logout();
-    navigate("login");
+    navigate("/login");
   }
 
   const [ toggleMenu, setToggleMenu ] = useState(false)
@@ -46,8 +46,8 @@ export default function Navbar() {
           </ul>
         </div>
         <div className={toggleMenu ? "d-none" : "d-flex align-items-center"}>
-          <ProfilePhoto />
-          {/* <Link className="m-2 border-success navbar-brand nav-link" href="#">{user.displayName || user.email}</Link> */}
+          {/* <ProfilePhoto /> */}
+          <Link className="m-2 border-success navbar-brand nav-link" href="#">{user.displayName || user.email}</Link>
           <button onClick={handleLogout} className="btn btn-light btn-sm">Cerrar sesión</button>
         </div>
       </div>
