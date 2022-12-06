@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-danger px-2">
+    <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-danger px-3">
       <div className="container-fluid">
         <button onClick={handletoggleMenu} className={toggleMenu ? "navbar-toggler" : "navbar-toggler collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded={toggleMenu ? "true" : "false"}aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -51,53 +51,7 @@ export default function Navbar() {
           <button onClick={handleLogout} className="btn btn-light btn-sm">Cerrar sesión</button>
         </div>
       </div>
-</nav>
-//     <nav className="navbar navbar-expand-lg bg-success">
-//       <div className="container-fluid">
-//         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-//           <span className="navbar-toggler-icon"></span>
-//         </button>
-//         <div className="collapse navbar-collapse" id="navbarScroll">
-//           <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{"--bs-scroll-height": "100px"}}>
-//             <li className="nav-item">
-//               <Link to="/" className="nav-link active" aria-current="page">Home</Link>
-//             </li>
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/">Favoritos</Link>
-//             </li>
-//             <li onClick={handletoggleMenu} className="nav-item dropdown">
-//               <Link className={toggleMenu ? "nav-link dropdown-toggle show" : "nav-link dropdown-toggle"} to="#" role="button" data-bs-toggle="dropdown" aria-expanded={toggleMenu ? true : false}>
-//                 Cuenta
-//               </Link>
-//               <ul className={toggleMenu ? "dropdown-menu show" : "dropdown-menu"}>
-//                 <li><Link className="dropdown-item" to="/">Action</Link></li>
-//                 <li><Link className="dropdown-item" to="/">Another action</Link></li>
-//                 <li><hr className="dropdown-divider" /></li>
-//                 <li><Link className="dropdown-item" to="/">Something else here</Link></li>
-//               </ul>
-//             </li>
-//             <li className="nav-item">
-//               <Link className="nav-link disabled" to="/">Link</Link>
-//             </li>
-//           </ul>
-//           <form className="d-flex" role="search">
-//             <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-//             <button className="btn btn-outline-dark" onClick={handleLogout} type="submit">Buscar</button>
-//         <Link className="navbar-brand" to="/">
-//           {/* <img src={user.photoURL} referrerPolicy="no-referrer" alt="profile" style={{"width":"38px", "height":"38px"}} className="d-inline-block align-text-top rounded-4" /> */}
-//           <ProfilePhoto />
-//         </Link>
-//           <Link onClick={handletoggleMenu} className={toggleMenu ? "nav-link dropdown-toggle navbar-brand show" : "nav-link navbar-brand dropdown-toggle"} role="button" data-bs-toggle="dropdown" aria-expanded={toggleMenu ? true : false} to="/">{user.displayName || user.email}</Link>
-//           <ul className={toggleMenu ? "dropdown-menu show" : "dropdown-menu"}>
-//                 <li><Link className="dropdown-item" to="/">Action</Link></li>
-//                 <li><Link className="dropdown-item" to="/">Another action</Link></li>
-//                 <li><hr className="dropdown-divider" /></li>
-//                 <li><Link className="dropdown-item" to="/">Something else here</Link></li>
-//               </ul>
-//           </form>
-//         </div>
-//       </div>
-// </nav>
-  )
+    </nav>
+      )
   
 }
