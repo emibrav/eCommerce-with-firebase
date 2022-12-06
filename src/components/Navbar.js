@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-danger px-2">
       <div className="container-fluid">
         <button onClick={handletoggleMenu} className={toggleMenu ? "navbar-toggler" : "navbar-toggler collapsed"} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded={toggleMenu ? "true" : "false"}aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

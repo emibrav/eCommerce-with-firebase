@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="min-vh-100 min-vw-100 d-inline-block bg-light bg-gradient">
+    <div className="min-vh-100 min-vw-100 bg-light bg-gradient">
       <AuthProvider>
         <Routes>
             <Route path="/" element={
