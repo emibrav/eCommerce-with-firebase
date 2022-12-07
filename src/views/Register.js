@@ -63,7 +63,7 @@ export default function Register() {
           <input type="email" name="email" placeholder="Email" onChange={handleChange} className="form-control d-grid col-12 mb-2"  />
           {/* <label htmlFor="password"className="form-label" >Password</label> */}
           <input type="password" name="password" placeholder="Password" id="password" onChange={handleChange} className="form-control" />
-          <button className="btn btn-primary d-grid col-12 mx-auto mt-2">Login</button>
+          <button className="btn btn-primary d-grid col-12 mx-auto mt-2">Registrarme</button>
       </form>
       { error && <p>{error}</p> }
       <p><Link to="/login">Logueate</Link> si ya tenés cuenta</p>
