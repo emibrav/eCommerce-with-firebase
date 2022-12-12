@@ -35,12 +35,17 @@ const Home = () => {
       
     })
   }, [])
+  const [total, setTotal] = useState(0)
   
   const handleAddToCart = (item) => {
     setCart((cart) => cart.concat(item))
+    
   }
+  
 
-  const text = cart.reduce((message, item) => message.concat(`\n• ${item.name} - $${item.price}\n`), ``).concat(`\nTotal: ${cart.reduce((total, item) => total + item.price, 0) }`)
+  const text = cart.reduce((message, item) => message.concat(`\n• ${item.name} - $${item.price}`), ``).concat(`\n\nTotal: $${cart.reduce((total, item) => parseInt(total) + parseInt(item.price), 0) }`)
+
+  //Total: ${cart.reduce((total, item) => total + item.price, 0) }`)
   
   return (
     <>
@@ -57,7 +62,7 @@ const Home = () => {
         }
         {
           cart.length ? 
-            <a href={`https://wa.me/5493512297944?text=Hola! Te paso mi lista de compra:${encodeURIComponent(text)}`} className="btn btn-primary d-grid gap-2  sticky-bottom" onClick={() => console.log(cart)}>Finalizar compra en Whatsapp - ({cart.length} productos)</a>
+            <a target="_blank" rel="noreferrer" href={`https://wa.me/5493512297944?text=Hola! Te paso mi lista de compra:${encodeURIComponent(text)}`} className="btn btn-success d-grid gap-2  sticky-bottom" onClick={() => console.log(cart)}>Finalizar compra en Whatsapp - ({cart.length} productos)</a>
             : null
         }
       </div>  

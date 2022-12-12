@@ -11,7 +11,7 @@ const Card = ({product, handleAddToCart}) => {
           <span className="badge bg-info">${price}</span>
         </div>
         <p className="card-text">{description}</p>
-        <button onClick={handleAddToCart} className="btn btn-success">Añadir al carrito 🛒</button>
+        <button onClick={handleAddToCart} className="btn btn-primary">Añadir al carrito 🛒</button>
       </div>
     </div>
   )
