@@ -5,7 +5,6 @@ import Card from "../components/Card";
 import { INFO } from "../app/constants";
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { Link } from "react-router-dom";
 
 const Home = () => {
   
@@ -78,8 +77,8 @@ const Home = () => {
                     <Offcanvas.Body>
                       {
                         cart.map(item => (
-                          <div>
-                            <div key={item.id}>{item.name} - ${item.price}
+                          <div key={item.id}>
+                            <div >{item.name} - ${item.price}
                               <button className="btn btn-primary btn-sm mx-1 my-1">+</button>
 
                               <button className="btn btn-danger btn-sm">-</button>
